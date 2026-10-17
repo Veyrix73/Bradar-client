@@ -65,7 +65,9 @@ const SITE_CONFIG = {
 
   releaseButtons.forEach((button) => {
     button.disabled = !isConfiguredUrl(SITE_CONFIG.releaseUrl);
-    button.textContent = button.disabled ? "Release link coming soon" : "Check release";
+    button.textContent = "Check release";
+    if (button.disabled) button.title = "Add the official release URL in SITE_CONFIG in script.js";
+    else button.removeAttribute("title");
     const arrow = document.createElement("span");
     arrow.className = "button__arrow";
     arrow.setAttribute("aria-hidden", "true");
