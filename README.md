@@ -85,4 +85,4 @@ Change `githubUrl` in `SITE_CONFIG`. The footer GitHub link uses that setting.
 - Section reveals use `IntersectionObserver`; a fallback shows the content when that API is unavailable.
 - The countdowns share one aligned timer and never display negative values.
 - Particle animation is lightweight and is not initialized when `prefers-reduced-motion: reduce` is enabled.
-- There are no JavaScript or CSS package dependencies. The stylesheet imports Google Fonts as a progressive enhancement; system fallbacks are provided when external fonts are unavailable.
+- There are no JavaScript or CSS package dependencies. The site has no external runtime dependencies; system font stacks provide the typography.
